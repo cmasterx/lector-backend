@@ -19,8 +19,8 @@
  * App Variables
  */
 const app = express();
-const port = process.env.PORT || "8000";
-const staticPath = '/home/charliew/Documents/dev/hackathon/calhacks/lector-frontend/build';
+const port = process.env.PORT || "80";
+const staticPath = './public';
 // const staticPath = path.join(__dirname, 'static');
 
 
