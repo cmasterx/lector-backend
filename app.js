@@ -6,6 +6,7 @@
 
  const express = require('express');
  const path = require('path');
+ const cors = require('cors');
  const cookieParser = require('cookie-parser');
  const bodyParser = require('body-parser');
  const MongoClient = require('mongodb').MongoClient;
@@ -26,6 +27,7 @@ const staticPath = '/home/charliew/Documents/dev/hackathon/calhacks/lector-front
 /**
  *  App Configuration
  */
+app.use(cors());
 app.use(cookieParser());
 app.use(express.static(staticPath));
 // app.use(express.static("/home/charliew/Documents/tamu/spring-2020/315_project_3"));
