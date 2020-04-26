@@ -1,0 +1,49 @@
+{
+  "name": "lector-backend",
+  "version": "1.0.0",
+  "description": "Backend for lector webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js",
+    "ui": "browser-sync start --proxy=localhost:8000 --files='**/*.css, **/*.html, **/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmasterx/lector-backend.git"
+  },
+  "author": {
+    "name": "Charlemagne Wong",
+    "email": "charlemagnew13@gmail.com",
+    "url": "http://cmasterx.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmasterx/lector-backend/issues"
+  },
+  "homepage": "https://github.com/cmasterx/lector-backend#readme",
+  "contributors": [
+    {
+      "name": "James Eroy",
+      "email": "mxteroy@gmail.com",
+      "url": "http://jameseroy.com"
+    }
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "nodemod": "^2.6.1",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "pug": "^2.0.4"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
