@@ -5,6 +5,7 @@
  */
 
  const express = require('express');
+ const fs = require('fs');
  const path = require('path');
  const cors = require('cors');
  const cookieParser = require('cookie-parser');
@@ -13,7 +14,7 @@
  const bcrypt = require('bcrypt');          // hashing algorithm
  const crypto = require('crypto');          // generate uuid/tokens
  
- const mongoURI = "mongodb+srv://lector:lector@cluster0-f0sp3.azure.mongodb.net/test?retryWrites=true&w=majority";
+ const mongoURI = fs.readFileSync('./mongo_url.txt', {encoding : 'utf8'});      // url for MongoDB
  
 /**
  * App Variables
